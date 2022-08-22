@@ -10,7 +10,7 @@ import pickle
 import cv2
 import os
 
-imagePaths = list(paths.list_images(r'C:\Users\Admin\Desktop\Shwetha V\ITK SDP\Images')) 
+imagePaths = list(paths.list_images("//Images File Address Path")) 
 knownEncodings = []
 knownNames = []
 
