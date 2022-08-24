@@ -7,6 +7,7 @@
 from imutils import paths
 import face_recognition
 import pickle
+import time
 import cv2
 import os
 
@@ -29,12 +30,6 @@ f = open("face_enc", "wb")
 f.write(pickle.dumps(data))
 f.close()
 
-import face_recognition
-import imutils
-import pickle
-import time
-import cv2
-import os
 cascPathface = os.path.dirname(cv2.__file__) + "/data/haarcascade_frontalface_alt2.xml"
 faceCascade = cv2.CascadeClassifier(cascPathface) 
 data = pickle.loads (open('face_enc', "rb").read())
@@ -71,10 +66,3 @@ while True:
         break
 video_capture.release()
 cv2.destroyAllwindows()
-
-
-# In[ ]:
-
-
-
-
